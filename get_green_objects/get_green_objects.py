@@ -185,9 +185,10 @@ class getGreenObjects:
         self.first_start = True
 
     def unload(self):
-        for action in self.actions:
-            self.iface.removePluginMenu(self.tr(u'&Get Green Objects'), action)
-            self.menu.clear(actions)
+        self.menu.clear()
+       # for action in self.actions:
+        #    self.iface.removePluginMenu(self.tr(u'&Get Green Objects'), action)
+         #   self.menu.clear(actions)
 
 
 

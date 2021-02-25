@@ -182,13 +182,14 @@ class writeToCSV:
         self.first_start = True
 
     def unload(self):
+        self.menu.clear()
         #self.menu.deleteLater()
         #self.iface.removePluginMenu("&Skriv til CSV", self.action)
-        for action in self.actions:
-            self.iface.removePluginMenu(
-                self.tr(u'&Skriv til CSV'),
-                action)
-            self.iface.removeToolBarIcon(action)
+        #for action in self.actions:
+         #   self.iface.removePluginMenu(
+          #      self.tr(u'&Skriv til CSV'),
+           #     action)
+            #self.iface.removeToolBarIcon(action)
 
 
     def run(self):

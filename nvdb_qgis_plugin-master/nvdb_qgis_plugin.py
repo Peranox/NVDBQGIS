@@ -191,13 +191,14 @@ class NvdbQgisPlugin:
         self.first_start = True
 
     def unload(self):
+        self.menu.clear()
         # self.menu.deleteLater()
         # self.iface.removePluginMenu("&Hent Objekter", self.action)
-        for action in self.actions:
-            self.iface.removePluginMenu(
-                self.tr(u'&Hent Objekter'),
-                action)
-            self.iface.removeToolBarIcon(action)
+        #for action in self.actions:
+         #   self.iface.removePluginMenu(
+          #      self.tr(u'&Hent Objekter'),
+           #     action)
+            #self.iface.removeToolBarIcon(action)
 
     def comboBox_itemChanged(self, index):
         items = getObjInCat(index)
