@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/plugins/get_green_objects" >
+        <file>icon.png</file>
+    </qresource>
+</RCC>
