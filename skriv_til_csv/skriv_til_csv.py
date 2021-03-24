@@ -159,10 +159,10 @@ class writeToCSV:
         return action
 
     def initGui(self):
-        # Check if the menu exists and get it
+        # Sjekker om menyen finnes
         self.menu = self.iface.mainWindow().findChild(QMenu, '&NVDB-Meny')
 
-        # If the menu does not exist, create it!
+        # Legg til pluginen til menyen
         if not self.menu:
             self.menu = QMenu('&NVDB-Meny', self.iface.mainWindow().menuBar())
             self.menu.setObjectName('&NVDB-Meny')
